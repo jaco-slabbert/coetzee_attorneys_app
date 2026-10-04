@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CNC Attorneys | Coetzee & Co Attorneys{% endblock %}</title>
+    <meta name="description" content="CNC Attorneys offers modern, strategic legal guidance for commercial, property, litigation, and estate matters.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="CNC Attorneys home">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <div class="logo-text">
+                    CNC Attorneys
+                    <span>Coetzee &amp; Co Attorneys</span>
+                </div>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="/#about">About Firm</a>
+                <a href="/#services">Practice Areas</a>
+                <a href="/#process">Why CNC</a>
+                <a href="/#reviews">Client Reviews</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+            <a href="/#contact" class="btn-primary">Request Consultation</a>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col brand-column">
+                <div class="logo-text">
+                    CNC Attorneys
+                    <span>Coetzee &amp; Co Attorneys</span>
+                </div>
+                <p>Modern legal solutions that combine institutional expertise, practical strategy, and client-first advocacy.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> South Africa</p>
+                <p><i class="fa-solid fa-phone"></i> +27 (0)11 555 0199</p>
+                <p><i class="fa-solid fa-envelope"></i> info@cncattorneys.co.za</p>
+            </div>
+            <div class="footer-col">
+                <h4>Practice</h4>
+                <p>Commercial Law</p>
+                <p>Litigation</p>
+                <p>Property &amp; Conveyancing</p>
+                <p>Estates &amp; Trusts</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal Notice</h4>
+                <p>Regulated by the Legal Practice Council (LPC) of South Africa.</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 CNC Attorneys. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
