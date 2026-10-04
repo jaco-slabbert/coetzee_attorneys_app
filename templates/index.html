@@ -29,7 +29,7 @@
     </div>
 </section>
 
-<section class="pain-points" id="process" style="padding: 0 0 5rem 0;">
+<section class="pain-points" id="process" style="padding: 0 0 5rem 0; height: 100vh;">
     <div class="metrics-bar" style="margin-bottom: 2.5rem;">
         <div class="container metrics-grid">
             <div class="metric-item">
@@ -52,25 +52,25 @@
     </div>
     <div class="container">
         <div class="section-heading">
-            <span class="eyebrow dark">When legal challenges arise...</span>
-            <h2>Clear, decisive action when your position is on the line.</h2>
+            <span class="eyebrow dark">When pressure builds</span>
+            <h2>Legal clarity when the stakes are highest.</h2>
         </div>
 
         <div class="feature-grid">
             <article class="feature-card">
                 <i class="fa-solid fa-building-shield"></i>
-                <h3>Business Risk</h3>
-                <p>Contracts, compliance, and governance issues can disrupt growth. We help protect value before problems escalate.</p>
+                <h3>Commercial Exposure</h3>
+                <p>Contracts, compliance, governance, and operational decisions can quietly escalate. We identify risk early, protect value, and keep your next move deliberate.</p>
             </article>
             <article class="feature-card">
                 <i class="fa-solid fa-landmark"></i>
-                <h3>Property Pressure</h3>
-                <p>Transfers, disputes, and title concerns require meticulous process and careful risk management.</p>
+                <h3>Property Complexity</h3>
+                <p>From transfers and disputes to title concerns, property matters demand careful process and calm judgment. We reduce uncertainty and keep each step moving forward.</p>
             </article>
             <article class="feature-card">
                 <i class="fa-solid fa-scale-balanced"></i>
-                <h3>Litigation Stress</h3>
-                <p>When outcomes matter, legal precision and strategic advocacy become the difference between delay and resolution.</p>
+                <h3>Outcome-Driven Advocacy</h3>
+                <p>When a matter becomes adversarial, every point matters. We build practical strategy, manage the risk clearly, and stand beside you when the pressure is on.</p>
             </article>
         </div>
     </div>
@@ -83,29 +83,84 @@
             <h2>Purpose-built legal guidance for real-world challenges.</h2>
         </div>
 
-        <div class="services-grid">
-            <article class="service-card">
-                <i class="fa-solid fa-briefcase"></i>
-                <h3>Commercial &amp; Corporate</h3>
-                <p>Structuring, governance, contract review, shareholder strategy, and compliance support for ambitious businesses.</p>
+        <div class="service-tabs" data-service-tabs>
+            <div class="service-tab-list" role="tablist" aria-label="Practice areas">
+                <button class="service-tab is-active" id="service-tab-commercial" type="button" role="tab" aria-selected="true" aria-controls="service-panel-commercial" data-tab-target="commercial">Commercial &amp; Corporate</button>
+                <button class="service-tab" id="service-tab-property" type="button" role="tab" aria-selected="false" aria-controls="service-panel-property" data-tab-target="property">Property &amp; Conveyancing</button>
+                <button class="service-tab" id="service-tab-litigation" type="button" role="tab" aria-selected="false" aria-controls="service-panel-litigation" data-tab-target="litigation">Litigation &amp; Dispute Resolution</button>
+                <button class="service-tab" id="service-tab-estates" type="button" role="tab" aria-selected="false" aria-controls="service-panel-estates" data-tab-target="estates">Estates &amp; Trusts</button>
+            </div>
+
+            <article class="service-panel is-active" id="service-panel-commercial" role="tabpanel" aria-labelledby="service-tab-commercial" tabindex="0">
+                <div class="service-panel-header">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>Commercial &amp; Corporate</h3>
+                </div>
+                <div class="service-panel-body">
+                    <div class="service-panel-copy">
+                        <p>We help founders, owners, and management teams structure businesses with confidence, protect governance decisions, and negotiate commercial agreements that are practical, enforceable, and aligned to long-term strategy.</p>
+                        <ul>
+                            <li>Company structuring and shareholder arrangements</li>
+                            <li>Commercial contracts and risk review</li>
+                            <li>Corporate governance and compliance support</li>
+                        </ul>
+                    </div>
+                    <img src="../static/images/commercial.avif" alt="Classical law office building" />
+                </div>
                 <a href="#contact">Learn More &amp; Seek Counsel <span>→</span></a>
             </article>
-            <article class="service-card">
-                <i class="fa-solid fa-building-columns"></i>
-                <h3>Property &amp; Conveyancing</h3>
-                <p>Commercial transfers, lease negotiations, bond registrations, and risk-led property advice.</p>
+            <article class="service-panel" id="service-panel-property" role="tabpanel" aria-labelledby="service-tab-property" tabindex="0" hidden>
+                <div class="service-panel-header">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>Property &amp; Conveyancing</h3>
+                </div>
+                <div class="service-panel-body">
+                    <div class="service-panel-copy">
+                        <p>From acquisition to transfer, lease negotiation to title review, we guide property transactions with precision, diligence, and a close eye on commercial risk.</p>
+                        <ul>
+                            <li>Commercial and residential conveyancing</li>
+                            <li>Lease review and negotiations</li>
+                            <li>Bond registration and title due diligence</li>
+                        </ul>
+                    </div>
+                    <img src="../static/images/home.avif" alt="Modern property development exterior" />
+                </div>
                 <a href="#contact">Learn More &amp; Seek Counsel <span>→</span></a>
             </article>
-            <article class="service-card">
-                <i class="fa-solid fa-gavel"></i>
-                <h3>Litigation &amp; Dispute Resolution</h3>
-                <p>Strategic advocacy for civil, commercial, and contractual disputes across the relevant courts and tribunals.</p>
+            <article class="service-panel" id="service-panel-litigation" role="tabpanel" aria-labelledby="service-tab-litigation" tabindex="0" hidden>
+                <div class="service-panel-header">
+                    <i class="fa-solid fa-gavel"></i>
+                    <h3>Litigation &amp; Dispute Resolution</h3>
+                </div>
+                <div class="service-panel-body">
+                    <div class="service-panel-copy">
+                        <p>When disputes become complex, we move decisively. Our approach balances strategic advocacy, commercial judgment, and practical risk management to protect your position.</p>
+                        <ul>
+                            <li>Civil and commercial dispute strategy</li>
+                            <li>Negotiation, mediation and tribunal advocacy</li>
+                            <li>Evidence-led preparation and case direction</li>
+                        </ul>
+                    </div>
+                    <img src="../static/images/lady_justice.avif" style="object-position: top;" alt="Historic courthouse and legal architecture" />
+                </div>
                 <a href="#contact">Learn More &amp; Seek Counsel <span>→</span></a>
             </article>
-            <article class="service-card">
-                <i class="fa-solid fa-file-contract"></i>
-                <h3>Estates &amp; Trusts</h3>
-                <p>Wills, trust establishment, deceased estate administration, and succession planning with long-term clarity.</p>
+            <article class="service-panel" id="service-panel-estates" role="tabpanel" aria-labelledby="service-tab-estates" tabindex="0" hidden>
+                <div class="service-panel-header">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <h3>Estates &amp; Trusts</h3>
+                </div>
+                <div class="service-panel-body">
+                    <div class="service-panel-copy">
+                        <p>We help families and individuals plan with clarity, protect legacy interests, and administer estates with sensitivity, transparency, and legal precision.</p>
+                        <ul>
+                            <li>Wills and succession planning</li>
+                            <li>Trust creation and administration</li>
+                            <li>Estate administration and family conflict support</li>
+                        </ul>
+                    </div>
+                    <img src="../static/images/generations.avif" alt="Classical heritage and estate architecture" />
+                </div>
                 <a href="#contact">Learn More &amp; Seek Counsel <span>→</span></a>
             </article>
         </div>
