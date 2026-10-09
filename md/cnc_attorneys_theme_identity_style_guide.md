@@ -28,31 +28,33 @@ The color system combines a commanding deep navy charcoal foundation (`--title`)
 
 ```css
 :root {
-  /* Primary Brand & Typography Base */
-  --title: #1b2a3a;          /* Deep Slate Navy — Structural Stature & Authority */
-  --button: #627a93;         /* Refined Slate Blue — Interactive Focus & Elegance */
-  --hover: #4a5f75;          /* Deep Slate Hover — Precise Tactile State */
-  
-  /* Neutral & Canvas System */
-  --text: #434d48;           /* Muted Charcoal — High Legibility, Low Eyestrain */
-  --text-muted: #64748b;     /* Subtle Secondary Typography Base */
-  --white: #ffffff;          /* Pure Light Canvas Background */
-  --back: #ececec;           /* Architectural Cool Neutral Accent Background */
-
-  /* Luxury Accent & Interactive Tokens */
-  --accent-platinum: #E5E5E5;/* Subtle Muted Gold Line Detail (1px Accents Only) */
-  --glass-navy: rgba(27, 42, 58, 0.85); /* Glassmorphism Overlay Base */
-  --glass-border: rgba(255, 255, 255, 0.12); /* Subtle Border for Dark Overlays */
-
-  /* Elevation & Architectural Shadows */
-  --shadow-subtle: 0 4px 20px rgba(27, 42, 58, 0.04);
-  --shadow-hover: 0 12px 32px rgba(27, 42, 58, 0.08);
-  --shadow-modal: 0 24px 48px rgba(0, 0, 0, 0.16);
-
-  /* Animation & Transition Standards */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-fast: 200ms var(--ease-out);
-  --transition-smooth: 400ms var(--ease-out);
+    --primary: #1b2a3a;
+    --secondary: #E5E5E5;
+    --info: #627a93;
+    --title: var(--primary);
+    --button: var(--info);
+    --hover: #4a5f75;
+    --text: #434d48;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --back: #ececec;
+    --accent-platinum: var(--secondary);
+    --glass-navy: rgba(27, 42, 58, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --shadow-subtle: 0 4px 20px rgba(27, 42, 58, 0.04);
+    --shadow-hover: 0 12px 32px rgba(27, 42, 58, 0.08);
+    --shadow-modal: 0 24px 48px rgba(0, 0, 0, 0.16);
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: 200ms var(--ease-out);
+    --transition-smooth: 400ms var(--ease-out);
+    --success: #2e7d32;
+    --accent-gold: var(--accent-platinum);
+    --overlay-dark: var(--glass-navy);
+    --shadow-sm: var(--shadow-subtle);
+    --shadow-md: var(--shadow-hover);
+    --shadow-lg: var(--shadow-modal);
+    --font-display: 'Cinzel', 'Georgia', serif;
+    --font-body: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
 }
 ```
 
