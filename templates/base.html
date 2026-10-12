@@ -24,7 +24,6 @@
                 </div>
             </a>
             <nav aria-label="Main navigation">
-                <a href="/#about">About Us</a>
                 <a href="/#process">Why C&amp;C</a>
                 <a href="/#services">Our Expertise</a>
                 <a href="/#reviews">Client Reviews</a>
@@ -41,26 +40,11 @@
     <footer>
         <div class="container footer-grid">
             <div class="footer-col brand-column">
-                <div class="logo-text">
-                    C&amp;C Attorneys
-                    <span>Coetzee &amp; Co Attorneys</span>
-                </div>
-                <p>Modern legal solutions that combine institutional expertise, practical strategy, and client-first advocacy.</p>
+                <img src="{{ url_for('static', path='/images/Big_logo.png') }}" alt="C&amp;C Attorneys logo">
             </div>
             <div class="footer-col">
-                <h4>Contact</h4>
-                <p><i class="fa-solid fa-location-dot"></i> South Africa</p>
-                <p><i class="fa-solid fa-phone"></i> +27 (0)11 555 0199</p>
-                <p><i class="fa-solid fa-envelope"></i> info@cncattorneys.co.za</p>
             </div>
-            <div class="footer-col">
-                <h4>Practice</h4>
-                <p>Commercial Law</p>
-                <p>Litigation</p>
-                <p>Property &amp; Conveyancing</p>
-                <p>Estates &amp; Trusts</p>
-            </div>
-            <div class="footer-col">
+            <div class="footer-col" style="align-content: center;">
                 <h4>Legal Notice</h4>
                 <p>Regulated by the Legal Practice Council (LPC) of South Africa.</p>
             </div>
@@ -98,6 +82,23 @@
                 });
 
                 observer.observe(painPoints);
+            }
+
+            const revealSections = document.querySelectorAll('.section-reveal');
+            if (revealSections.length) {
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: [0.14, 0.28],
+                    rootMargin: '0px 0px -8% 0px'
+                });
+
+                revealSections.forEach((section) => revealObserver.observe(section));
             }
 
             const serviceTabGroups = document.querySelectorAll('[data-service-tabs]');

@@ -339,6 +339,81 @@ body.is-ready .hero-copy .trust-strip {
 .pain-points.is-visible .feature-card:nth-child(2) { animation-delay: 0.78s; }
 .pain-points.is-visible .feature-card:nth-child(3) { animation-delay: 0.9s; }
 
+.section-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: transform, opacity;
+}
+
+.section-reveal.is-visible {
+    animation: sectionReveal 0.9s var(--ease-out) forwards;
+}
+
+.section-reveal .section-heading,
+.section-reveal .service-tab-list,
+.section-reveal .service-panel,
+.section-reveal .service-tab,
+.section-reveal .why-copy,
+.section-reveal .why-item,
+.section-reveal .review-card,
+.section-reveal .callout-copy,
+.section-reveal .callout-card {
+    opacity: 0;
+}
+
+.section-services.is-visible .section-heading {
+    animation: sectionReveal 0.8s var(--ease-out) 0.12s forwards;
+}
+
+.section-services.is-visible .service-tab-list {
+    animation: tabReveal 0.7s var(--ease-out) 0.2s forwards;
+}
+
+.section-services.is-visible .service-tab {
+    animation: tabReveal 0.7s var(--ease-out) forwards;
+}
+
+.section-services.is-visible .service-tab:nth-child(1) { animation-delay: 0.22s; }
+.section-services.is-visible .service-tab:nth-child(2) { animation-delay: 0.29s; }
+.section-services.is-visible .service-tab:nth-child(3) { animation-delay: 0.36s; }
+.section-services.is-visible .service-tab:nth-child(4) { animation-delay: 0.43s; }
+
+.section-services.is-visible .service-panel {
+    animation: panelLift 0.8s var(--ease-out) 0.12s forwards;
+}
+
+.section-why.is-visible .why-copy {
+    animation: sectionReveal 0.8s var(--ease-out) 0.12s forwards;
+}
+
+.section-why.is-visible .why-item {
+    animation: whyItemReveal 0.75s var(--ease-out) forwards;
+}
+
+.section-why.is-visible .why-item:nth-child(1) { animation-delay: 0.22s; }
+.section-why.is-visible .why-item:nth-child(2) { animation-delay: 0.32s; }
+.section-why.is-visible .why-item:nth-child(3) { animation-delay: 0.42s; }
+
+.section-reviews.is-visible .section-heading {
+    animation: sectionReveal 0.8s var(--ease-out) 0.1s forwards;
+}
+
+.section-reviews.is-visible .review-card {
+    animation: reviewReveal 0.9s var(--ease-out) forwards;
+}
+
+.section-reviews.is-visible .review-card:nth-child(1) { animation-delay: 0.18s; }
+.section-reviews.is-visible .review-card:nth-child(2) { animation-delay: 0.3s; }
+.section-reviews.is-visible .review-card:nth-child(3) { animation-delay: 0.42s; }
+
+.section-callout.is-visible .callout-copy {
+    animation: calloutRevealLeft 0.8s var(--ease-out) 0.12s forwards;
+}
+
+.section-callout.is-visible .callout-card {
+    animation: calloutRevealRight 0.85s var(--ease-out) 0.24s forwards;
+}
+
 .eyebrow {
     display: inline-block;
     margin-bottom: 1rem;
@@ -468,6 +543,83 @@ body.is-ready .hero-copy .trust-strip {
     }
 }
 
+@keyframes sectionReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tabReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes panelLift {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.985);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes whyItemReveal {
+    0% {
+        opacity: 0;
+        transform: translateX(18px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes reviewReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(24px) rotate(0.8deg) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0) scale(1);
+    }
+}
+
+@keyframes calloutRevealLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-18px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes calloutRevealRight {
+    0% {
+        opacity: 0;
+        transform: translateX(18px) scale(0.985);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -496,7 +648,27 @@ body.is-ready .hero-copy .trust-strip {
     .pain-points.is-visible .metrics-bar,
     .pain-points.is-visible .section-heading,
     .pain-points.is-visible .metric-item,
-    .pain-points.is-visible .feature-card {
+    .pain-points.is-visible .feature-card,
+    .section-reveal,
+    .section-reveal.is-visible,
+    .section-reveal .section-heading,
+    .section-reveal .service-tab-list,
+    .section-reveal .service-panel,
+    .section-reveal .why-copy,
+    .section-reveal .why-item,
+    .section-reveal .review-card,
+    .section-reveal .callout-copy,
+    .section-reveal .callout-card,
+    .section-services.is-visible .section-heading,
+    .section-services.is-visible .service-tab-list,
+    .section-services.is-visible .service-tab,
+    .section-services.is-visible .service-panel,
+    .section-why.is-visible .why-copy,
+    .section-why.is-visible .why-item,
+    .section-reviews.is-visible .section-heading,
+    .section-reviews.is-visible .review-card,
+    .section-callout.is-visible .callout-copy,
+    .section-callout.is-visible .callout-card {
         opacity: 1;
         transform: none;
     }
@@ -600,11 +772,6 @@ body.is-ready .hero-copy .trust-strip {
     line-height: 1.5;
 }
 
-.services,
-.reviews {
-    background: linear-gradient(105deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.58));
-}
-
 .pain-points,
 .services,
 .why-us,
@@ -667,7 +834,8 @@ body.is-ready .hero-copy .trust-strip {
     color: var(--text-muted);
 }
 
-.services {
+.services,
+.reviews {
     background: rgba(4,25,20,0.02);
 }
 
@@ -683,7 +851,7 @@ body.is-ready .hero-copy .trust-strip {
 .service-tab-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 0.75rem;
 }
 
@@ -982,7 +1150,7 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr 1fr;
     gap: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.08);
