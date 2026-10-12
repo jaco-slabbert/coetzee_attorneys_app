@@ -1,16 +1,16 @@
-# CNC Attorneys (Coetzee & Co Attorneys) — Premium Digital Identity & Experience Architecture
+# C&amp;C Attorneys (Coetzee & Co Attorneys) — Premium Digital Identity & Experience Architecture
 
 ## 1. Executive Summary: The "Apple of Law" Philosophy
 
 ### Strategic Vision
 
-**CNC Attorneys (Coetzee & Co Attorneys)** is designed as an ultra-premium, modern legal practice. The digital experience rejects the visual clutter, heavy legalese, and outdated intimidation tactics of legacy firms. In their place, it delivers **uncompromising clarity, spatial luxury, instant credibility, and frictionless conversion**.
+**C&amp;C Attorneys (Coetzee & Co Attorneys)** is designed as an ultra-premium, modern legal practice. The digital experience rejects the visual clutter, heavy legalese, and outdated intimidation tactics of legacy firms. In their place, it delivers **uncompromising clarity, spatial luxury, instant credibility, and frictionless conversion**.
 
 ### Core Positioning
 
 > *"Relentless Precision. Unrivaled Representation."*
 >
-> CNC Attorneys distills legal complexities into decisive, strategic outcomes—protecting corporate entities, high-net-worth individuals, and vital assets through modern, high-touch advocacy.
+> C&amp;C Attorneys distills legal complexities into decisive, strategic outcomes—protecting corporate entities, high-net-worth individuals, and vital assets through modern, high-touch advocacy.
 
 ### Brand Archetype & Digital Aesthetic
 
@@ -66,7 +66,7 @@ The landing page follows a psychologically calibrated conversion path that trans
 
 ```
 +-----------------------------------------------------------------------+
-|  FLOATING HEADER: CNC Logo | Practices | Distinction | Contact | CTA  |
+|  FLOATING HEADER: C&amp;C Logo | Practices | Distinction | Contact | CTA  |
 +-----------------------------------------------------------------------+
 |                                                                       |
 |  HERO SECTION (Spatial Minimalism & High-Impact Typography)           |
@@ -79,7 +79,7 @@ The landing page follows a psychologically calibrated conversion path that trans
 +-----------------------------------------------------------------------+
 |  PRACTICE AREAS (Editorial Grid with Glass Micro-Interactions)        |
 +-----------------------------------------------------------------------+
-|  THE CNC DIFFERENCE (3 Pillars of Modern Legal Architecture)         |
+|  THE C&amp;C DIFFERENCE (3 Pillars of Modern Legal Architecture)         |
 +-----------------------------------------------------------------------+
 |  CLIENT FEEDBACK & REPUTATION (Minimalist Testimonial Carousel)        |
 +-----------------------------------------------------------------------+

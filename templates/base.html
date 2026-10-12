@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}CNC Attorneys | Coetzee & Co Attorneys{% endblock %}</title>
-    <meta name="description" content="CNC Attorneys offers modern, strategic legal guidance for commercial, property, litigation, and estate matters.">
+    <title>{% block title %}C&amp;C Attorneys | Coetzee & Co Attorneys{% endblock %}</title>
+    <meta name="description" content="C&amp;C Attorneys offers modern, strategic legal guidance for commercial, property, litigation, and estate matters.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', path='/images/favicon.ico') }}">
 </head>
 <body>
     <header class="topbar">
         <div class="container header-inner">
-            <a href="/" class="logo" aria-label="CNC Attorneys home">
-                <img src="{{ url_for('static', path='/images/Small_logo.png') }}" alt="CNC Attorneys logo" class="fa-solid fa-scale-balanced">
+            <a href="/" class="logo" aria-label="C&amp;C Attorneys home">
+                <!-- <i class="fa-solid fa-scale-balanced"></i> -->
+                <img src="{{ url_for('static', path='/images/Small_logo_dark.png') }}" alt="C&amp;C Attorneys logo">
+                <div class="logo-text">
+                    C&amp;C Attorneys
+                    <span>Coetzee &amp; Co</span>
+                </div>
             </a>
             <nav aria-label="Main navigation">
-                <a href="/#about">About Firm</a>
-                <a href="/#services">Practice Areas</a>
-                <a href="/#process">Why CNC</a>
+                <a href="/#about">About Us</a>
+                <a href="/#process">Why C&amp;C</a>
+                <a href="/#services">Our Expertise</a>
                 <a href="/#reviews">Client Reviews</a>
-                <a href="/#contact">Contact</a>
+                <a href="/#contact">Get in Touch</a>
             </nav>
             <a href="/#contact" class="btn-primary">Request Consultation</a>
         </div>
@@ -36,7 +42,7 @@
         <div class="container footer-grid">
             <div class="footer-col brand-column">
                 <div class="logo-text">
-                    CNC Attorneys
+                    C&amp;C Attorneys
                     <span>Coetzee &amp; Co Attorneys</span>
                 </div>
                 <p>Modern legal solutions that combine institutional expertise, practical strategy, and client-first advocacy.</p>
@@ -60,7 +66,7 @@
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2026 CNC Attorneys. All rights reserved.</p>
+            <p>&copy; 2026 C&amp;C Attorneys. All rights reserved.</p>
         </div>
     </footer>
     <script>
